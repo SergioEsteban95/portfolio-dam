@@ -74,6 +74,7 @@ nav a:hover,
 }
 
 /* 3. Presentación */
+
 .hero {
     min-height: 78vh;
     display: flex;
@@ -81,10 +82,21 @@ nav a:hover,
     justify-content: center;
     align-items: flex-start;
     padding: 100px 12%;
+
     background:
-        radial-gradient(ellipse at 80% 20%,
-        rgba(36, 107, 160, 0.16), transparent 48%);
+        linear-gradient(
+            90deg,
+            rgba(11, 15, 25, 0.96) 0%,
+            rgba(11, 15, 25, 0.82) 45%,
+            rgba(11, 15, 25, 0.30) 100%
+        ),
+        url("images/oceano-digital.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
 
 .eyebrow {
     color: var(--accent);
@@ -269,8 +281,9 @@ footer {
     }
 
     .hero {
-        min-height: auto;
-        padding: 85px 7%;
+    min-height: 70vh;
+    padding: 85px 7%;
+    background-position: 60% center;
     }
 
     h1 {
